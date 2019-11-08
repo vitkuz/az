@@ -14,7 +14,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t $REPOSITORY_URI:latest ./service-discovery --target prod
+      - docker build -t $REPOSITORY_URI:latest . --target prod
   post_build:
     commands:
       - echo Build completed on `date`
